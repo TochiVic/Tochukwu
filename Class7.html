@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>      
+        <style>
+            .def{
+                background: orange;
+                color: #fff;
+                padding: 30px;
+                margin: 10px 0;
+                position: static;
+
+                }
+                
+                .absolute{
+                    background: blue;
+                    position: absolute;
+                }
+            
+            .fixed{
+                background: brown;
+                position: fixed;
+                z-index: -200;
+            }
+            .relative{
+                position: relative;
+                top: 30px;
+                background-color: yellowgreen;
+            }
+            .sticky{
+                position: sticky;
+                top: 20px;
+                background: #001;
+            }
+            
+            .btn{
+                background:red ;
+                padding: 10px 30px;
+                border: 0;
+                border-radius: 10px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.05);
+                    background: black;
+                }
+            }
+            .card img{
+                display: block;
+                margin: auto;
+                transition: .5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            .box{
+                width: 40px;
+                height: 40px;
+                background: black;
+                transform: rotate(45deg);
+                transform: rotateX(180deg);
+                transform: rotateY(180deg);
+                color: red;
+            }
+
+            .box1{
+                padding: 30px;
+                background: #000;
+                margin: 10px;
+                animation:ani_1 5s infinite;
+            }
+            @keyframes ani_1{
+                0%{ background: red;}
+                50%{ background: black;}
+                100%{ background: lightblue;}
+
+            }
+
+            .circle{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 4px solid #009;
+                border-top-color: lightblue;
+                animation: spinner 1s infinite linear;
+            }
+             @keyframes spinner{
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+             }
+
+                
+             
+
+        </style>
+
+    </head>
+    <body>
+        <marquee behavior="" direction="">
+            <section style="display: flex; gap: 10px;">
+            <div> item 1</div>
+            <div> item 2</div>
+            <div> item 3</div>
+            </section>
+
+        </marquee>
+        <!-- animation -->
+         <div class="box1"></div>
+         <div class="circle"></div>
+        <!-- transform -->
+        <div class="box"> text </div>
+        <!-- transition-->
+        <button class="btn" type="button">Proceed</button>
+        <div class="card">
+            <img src="https://wallpapers.com/images/hd/guitar-pictures-extfg5tqghgvdjgr.jpg" width="100%">
+        </div>
+        <!-- position -->
+         <div class="def">Lorem ipsum dolor sit.</div>
+         <div class="def absolute">Lorem ipsum dolor sit.</div>
+         <div class="def sticky">Lorem ipsum dolor sit.</div>
+         <div class="def fixed">Lorem ipsum dolor sit.</div>
+         <div class="def">Lorem ipsum dolor sit.</div>
+         <div class="def relative">Lorem ipsum dolor sit.</div>
+         <div class="def">Lorem ipsum dolor sit.</div>
+         <div class="def">Lorem ipsum dolor sit.</div>
+         <div class="def">Lorem ipsum dolor sit.</div>
+         <div class="def">Lorem ipsum dolor sit.</div>
+
+
+    </body>
+
+</html>
